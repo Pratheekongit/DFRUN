@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: center; margin-left: 20px;">
+	<h4 style="margin: 0; color: white">Disguised Face Detection</h4>
+	<button style="margin-left: auto;">
+		<a class="btn btn-custom w-100" href="/logout">Logout</a>
+	</button>
+</div>
+<div id="abc">
+	<h1 style="margin-top: 30%">Image Verification</h1>
+	<form method="POST" action="/verify" enctype="multipart/form-data">
+		<label for="file1" style="font-weight: bold;">Input Image 1:</label>
+		<input type="file" id="file1" name="file1" style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; margin-left: 10px;">
+		<br><br>
+		<label for="file2" style="font-weight: bold;">Input Image 2:</label>
+		<input type="file" id="file2" name="file2" style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; margin-left: 10px;">
+		<br><br>
+		<button class="verify-button" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px;">Verify</button>
+	</form>
+</div>
+</div>
+{% endblock %}
