@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bg-gradient position-relative h-100vh">
+            <div class="home-table">
+                <div class="home-table-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="account_box bg-gradient">
+                                        <div class="col-lg-12">
+                                            <button class="btn btn-custom w-100 mt-3"><a href="{{ url_for('login')}}"><b>Login</b></a></button>
+                                        </div>
+	                                    <div class="col-lg-12">
+                                            <button class="btn btn-custom w-100 mt-3"><a href="{{ url_for('register')}}"><b>Register</b></a></button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
