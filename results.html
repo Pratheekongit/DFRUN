@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: center; margin-left: 20px;">
+	<h4 style="margin: 0; color: white">Disguised Face Detection</h4>
+	<button style="margin-left: auto;">
+		<a class="btn btn-custom w-100" href="/logout">Logout</a>
+	</button>
+</div>
+<div id="abc">
+	<div style="display: flex; flex-direction: column;">
+	  <div>Distance: {{ results.distance }}</div>
+	  <div>Max Threshold: {{ results.max_threshold_to_verify }}</div>
+	  <div>Model: {{ results.model }}</div>
+	  <div>Similarity Metric: {{ results.similarity_metric }}</div>
+	  <div>Verified: {{ results.verified }}</div>
+	</div>
+</div>
+{% endblock %}
